@@ -17,11 +17,7 @@ body {
 }
 
 .column-text {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
     column-count: 2;
-    -webkit-column-width: 390px;
-    -moz-column-width: 390px;
     column-width: 390px;
 
     max-width: min(90vh,75vw);
@@ -67,6 +63,8 @@ body {
 
 .side-container img {
     margin: min(1.5vw,1.5vh);
+    width: 90%;
+    height: 90%;
 }
 
 .side-container p {
