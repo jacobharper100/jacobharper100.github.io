@@ -1,63 +1,55 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
     <head>
-        <title>Jacob Harper</title>
-        <link rel = 'stylesheet' href = 'stylesheet.css'>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" side-container="width=device-width, initial-scale=1.0">
+        <title>Main Page</title>
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-
-        <div class = 'panel'>
-
-            <div class = 'top-text'>
-                <h>Jacob Harper</h>
-            </div>
-
-            <div class = 'side-panel'>
-                <div class = 'content-box'>
-                    <a href = 'http://github.com/jacobharper100'><img class = 'side-panel-img' src = 'icon-github.svg'></a>
-                    <a href = 'http://www.linkedin.com/in/jacob-harper-b39a71197/'><img class = 'side-panel-img' src = 'icon-linkedin.svg'></a>
-                    <a href = 'mailto:jacobharper100@gmail.com'><img class = 'side-panel-img' src = 'icon-email.svg'></a>
+        <!--Fixed menu and link overlay-->
+        <div class="overlay center">
+            <div class="side-left">
+                <div class="side-container center">
+                    <img style="border-radius: 50%" class="card" src="icon-github.svg">
+                    <img style="border-radius: 50%" class="card"  src="icon-linkedin.svg">
+                    <img style="border-radius: 50%" class="card"  src="icon-email.svg">
                 </div>
             </div>
-
-            <div class = 'grid-container'>
-                <div class = 'grid-item'>
-                    <div class = 'content-box'><a href = 'visualizing-computation.html'>
-                        <img class = 'grid-item-img' src = 'reader-compiled-o.png'>
-                        <p class = 'grid-item-text'>Visualizing Compilation</p>
-                    </a></div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = 'content-box'></div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = 'content-box'></div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = 'content-box'></div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = 'content-box'></div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = 'content-box'></div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = 'content-box'></div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = 'content-box'></div>
-                </div>
-                <div class = 'grid-item'>
-                    <div class = 'content-box'></div>
+            <div class="side-right">
+                <div class="side-container center">
+                    <p>Hello!</p>
                 </div>
             </div>
-            <!--
-                <div class = 'side-text'>
-                    <p>Sideways text is harder to read</p>
-                </div>
-            -->
         </div>
+        
+        <!--Main page content-->
+        <div class="content w3-red">
+            <div style="height:15vh; background-color: #101010;" class="container">
+                
+            </div>
+            <div style="height: 80vh; color: white; background-color: #101010;" class="container">
+                <div class="container-title">
+                    What is Lorem Ipsum?
+                </div>
+                <div class="column-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    <br><br>
+                    
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book. It has survived not only five centuries, but also the leap into 
+                    electronic typesetting, remaining essentially unchanged.<br><br>
+                    It was popularised in the 1960s with the release of Letraset sheets containing 
+                    Lorem Ipsum passages, and more recently with desktop publishing software like 
+                    Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+                </div>
+            </div>
+            <div style="height:5vh; background-color: #101010;" class="container">
+                <p style="color:white;text-align:center;">© 2020 Jacob Harper</p>
+            </div>
+        </div>
+
     </body>
 </html>
