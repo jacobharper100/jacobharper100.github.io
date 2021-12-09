@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="icon" href="#">
+
+        <title>Jacob Harper</title>
+    </head>
+    <body onload="onload()">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <div id="overlay">
+            <div class="snowflakes" aria-hidden="true"></div>
+        </div>
+        <div class="w3-display-container full-height">
+            <div class="w3-display-middle full-height">
+                <div class="w3-section w3-bar">
+                    <div class="w3-bar-item w3-left" style="margin: 0; padding:0;">
+                        <h style="font-weight: bold; font-size: 25px; color: #f2e9e4;">Jacob Harper</h>
+                    </div>
+                    <div class="w3-bar-item w3-right" style="margin: 0; padding:0;">
+                        <p style="font-size: 25px;">&#127876;</p>
+                    </div>
+                </div>
+                <div class="w3-display-middle w3-center">
+                    <p>This is my website!</p>
+                </div>
+                <div class="w3-section w3-display-bottommiddle w3-center">
+                    <p class="w3-large">
+                        <a href="#">Resume</a> |
+                        <a target="_blank" href="https://github.com/jacobharper100">Github</a> |
+                        <a target="_blank" href="https://www.linkedin.com/in/jacobharper100/">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    function onload() {
+        let overlay = document.getElementById("overlay");
+        for (let _ = 0 ; _ < 100 ; _++) {
+            let div = document.createElement("div");
+            let snowflake = document.createTextNode("❅");
+            div.appendChild(snowflake);
+            div.classList.add("snow");
+            overlay.appendChild(div);
+        }
+    }
+</script>
+
+<style>
+
+    #overlay {
+        position: fixed; /* Sit on top of the page content */
+        display: block; /* Hidden by default */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        pointer-events: none;
+    }
+
+    :root {
+        --background-color: #000814;
+        --text-color: #f2e9e4;
+        --link-color: #ca1d22;
+    }
+
+    body {
+        background-color: var(--background-color);
+        font-family: input-mono-narrow, SFMono-Regular, Consolas, Menlo, monospace;
+    }
+
+    a {
+        text-decoration: none;
+        border-bottom: 1px var(--link-color) solid;
+        color: var(--link-color)
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 18px;
+        color: var(--text-color);
+        -webkit-font-smoothing: antialiased;
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+        text-rendering: optimizelegibility;
+        line-height: 1.6;
+        letter-spacing: -0.1px;
+        margin-bottom: 1.5rem;
+    }
+
+    .full-height {
+        height: 100vh;
+    }
+
+    .full-height > div {
+        width: min(550px, 95vw);
+    }
+
+</style>
