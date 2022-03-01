@@ -58,6 +58,18 @@ p.paragraph {
 }
 
 .full-height > div {
-    width: min(750px, 95vw);
+    width: min(600px, 95vw);
     padding: 1rem;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
