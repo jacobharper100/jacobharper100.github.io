@@ -4,8 +4,7 @@
     --background-color: #000;
     --text-color: #fff;
     --link-color: rgb(226, 129, 255);
-    --text-size: 17px;
-    --header-size: 65px;
+    --text-size: 1rem;
 }
 
 body {
@@ -36,11 +35,6 @@ p {
     font-size: var(--text-size);
 }
 
-h1 {
-    font-size: var(--header-size);
-    font-weight: bold;
-}
-
 p.paragraph {
     text-align: left;
 }
@@ -55,11 +49,11 @@ p.paragraph {
   }
 
 .full-height {
-    position: fixed;
-    height: 100%;
+   min-height: 600px;
+   height: 100vh;
 }
 
 .full-height > div {
-    width: min(550px, 95vw);
+    width: min(750px, 95vw);
     padding: 1rem;
 }
