@@ -14,10 +14,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a {
-    text-decoration: none;
-    //border-bottom: 1px var(--link-color) solid;
+.highlight {
     color: var(--link-color);
+}
+
+a {
+    @extend .highlight;
+    text-decoration: none;
     font-size: var(--text-size);
     margin-left: 1rem;
     margin-right: 1rem;
