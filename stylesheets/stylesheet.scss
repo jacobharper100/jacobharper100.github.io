@@ -7,6 +7,10 @@
     --text-size: 1rem;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -50,7 +54,7 @@ p.paragraph {
 
 .full-height {
    min-height: 600px;
-   height: 100vh;
+   height: 100%;
 }
 
 .full-height > div {
