@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <link rel="icon" href="#">
-
-        <title>Jacob Harper</title>
-    </head>
-    <body onload="onload()">
-        <div id="overlay">
-            <div class="snowflakes" aria-hidden="true"></div>
-        </div>
-        <div class="w3-display-container full-height">
-            <div class="w3-display-middle full-height">
-                <div class="w3-section w3-bar">
-                    <div class="w3-bar-item w3-left" style="margin: 0; padding:0;">
-                        <p>Jacob Harper</p>
-                    </div>
-                    <div class="w3-bar-item w3-right" style="margin: 0; padding:0;">
-                        <p style="font-size: 25px;">&#127876;</p>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/stylesheet.css">
+    <link rel="icon" href="#">
+    <title>Jacob Harper</title>
+</head>
+<body>
+    <div class="w3-display-container full-height">
+        <div class="w3-display-middle full-height">
+            <!--<div class="w3-section w3-bar">
+                <div class="w3-bar-item w3-display-topmiddle" style="margin: 0; padding:0;">
+                    <p>Jacob Harper</p>
                 </div>
-                <div class="w3-display-middle w3-center">
-                    <p style="color: #ca1d22;">This is my website!</p>
-                </div>
-                <div class="w3-section w3-display-bottommiddle w3-center">
-                    <p class="w3-large">
-                        <a href="#">Resume</a> |
-                        <a target="_blank" href="https://github.com/jacobharper100">Github</a> |
-                        <a target="_blank" href="https://www.linkedin.com/in/jacobharper100/">LinkedIn</a>
-                    </p>
-                </div>
+            </div>-->
+            <div class="w3-display-middle w3-row w3-center">
+                <p>The cat has rolled <span id="counter" style="font-weight: bold; color: rgb(226, 129, 255);">0</span> times</p>
+                <img class="w3-center" src="roll.gif"\>
+                <br>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet. 
+                </p>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+                <p class="paragraph">
+                    Duis aute irure dolor in reprehenderit in voluptate velit 
+                    esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+            <div class="w3-section w3-display-bottommiddle w3-center">
+                <p class="w3-large">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        Lorem
+                    </a> 
+                    |
+                    <a target="_blank" href="#">
+                        Ipsum
+                    </a>
+                    |
+                    <a target="_blank" href="#">
+                        Labore
+                    </a>
+                </p>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
 
 <script>
-    function onload() {
-        let overlay = document.getElementById("overlay");
-        for (let _ = 0 ; _ < 100 ; _++) {
-            let div = document.createElement("div");
-            let snowflake = document.createTextNode("❅");
-            div.appendChild(snowflake);
-            div.classList.add("snow");
-            overlay.appendChild(div);
-        }
-    }
+    let counter = 0;
+    setInterval(() => {
+        document.getElementById("counter").innerHTML = ++counter;
+    }, 700); // Gif length 
 </script>

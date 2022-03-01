@@ -51,42 +51,22 @@
     pointer-events: none;
 }
 
-:root {
-    --background-color: #000814;
-    --text-color: #f2e9e4;
-    --link-color: #ca1d22;
-}
+/*
 
-body {
-    background-color: var(--background-color);
-    font-family: input-mono-narrow, SFMono-Regular, Consolas, Menlo, monospace;
-}
+    <div id="overlay">
+        <div class="snowflakes" aria-hidden="true"></div>
+    </div>
 
-a {
-    text-decoration: none;
-    border-bottom: 1px var(--link-color) solid;
-    color: var(--link-color);
-    font-weight: bold;
-}
-
-p {
-    font-size: 18px;
-    color: var(--text-color);
-    -webkit-font-smoothing: antialiased;
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    text-rendering: optimizelegibility;
-    line-height: 1.6;
-    letter-spacing: -0.1px;
-    margin-bottom: 1.5rem;
-}
-
-.full-height {
-    position: fixed;
-    height: 100%;
-}
-
-.full-height > div {
-    width: min(550px, 95vw);
-}
+    <script>
+        function onload() {
+            let overlay = document.getElementById("overlay");
+            for (let _ = 0 ; _ < 100 ; _++) {
+                let div = document.createElement("div");
+                let snowflake = document.createTextNode("❅");
+                div.appendChild(snowflake);
+                div.classList.add("snow");
+                overlay.appendChild(div);
+            }
+        }
+    </script>
+*/
